@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <application>
+        <variable-resolver>
+            org.springframework.web.jsf.DelegatingVariableResolver
+        </variable-resolver>
+    </application>
+    
+    <navigation-rule>
+        <from-view-id>/jsf/welcome.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>page_a</from-outcome>
+            <to-view-id>/jsf/pages/page-a.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>page_b</from-outcome>
+            <to-view-id>/jsf/pages/page-b.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/jsf/welcome2.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>page_dnf</from-outcome>
+            <to-view-id>/jsf/pages/template-detailed-no-form.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>page_dwf</from-outcome>
+            <to-view-id>/jsf/pages/template-detailed-with-form.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>page_snf</from-outcome>
+            <to-view-id>/jsf/pages/template-simple-no-form.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>page_swf</from-outcome>
+            <to-view-id>/jsf/pages/template-simple-with-form.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+</faces-config>
