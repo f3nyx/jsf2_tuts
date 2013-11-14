@@ -9,7 +9,7 @@
             30
         </session-timeout>
     </session-config>
-    <display-name>jsf2_01</display-name>
+    <display-name>jsf2_02</display-name>
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
